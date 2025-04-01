@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qadeer Bot Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, cyan, magenta, lime, pink, brown, grey, black, white);
+            background-size: 500% 500%;
+            animation: glowing-bg 2s infinite linear;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow-y: auto;
+            position: relative;
+        }h1 {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px white;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .button {
+        background-color: #FF2121;
+        color: white;
+        padding: 15px;
+        margin: 12px 0;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        width: 220px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(255, 33, 33, 0.8);
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 10px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px white;
+        position: relative;
+        z-index: 10;
+    }
+
+    @keyframes glowing-bg {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .pixel {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        box-shadow: 0 0 5px white;
+        opacity: 0.7;
+        animation: movePixel 10s linear infinite;
+    }
+
+    @keyframes movePixel {
+        0% {
+            transform: translateY(0) translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) translateX(calc(-50vw + 100vw * random()));
+            opacity: 0;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1>Welcome to Qadeer Bot Website</h1>
+    <div class="buttons">
+        <a href="Enter Your Link" class="button">TOFAN MD PAIR</a>
+        <a href="Enter Your Link" class="button">TOFAN BRAND PAIR</a>
+        <a href="Enter Your Link" class="button">TOFAN MD1 PAIR</a>
+        <a href="https://whatsapp.com/channel/0029Vaw6yRaBPzjZPtVtA80A" class="button">WA CHANNEL</a>
+        <a href="Enter Your Link" class="button">WA GROUP</a>
+        <a href="https://t.me/HacksManyMoreCheats" class="button">TG GROUP</a>
+        <a href="https://wa.me/+923079749129?text=𝐇𝐄𝐘-𝐁𝐎𝐓-𝐃𝐄𝐏𝐋𝐎𝐘-𝐁𝐑𝐎📍" class="button">BOT OWNER</a>
+        <a href="https://github.com/Qadeer-bhai" class="button">GITHUB LINK</a>
+    </div>
+    <footer>
+        <h2>Web by Qadeer</h2>
+    </footer>
+    <script>
+        for (let i = 0; i < 100; i++) {
+            let pixel = document.createElement('div');
+            pixel.classList.add('pixel');
+            pixel.style.left = Math.random() * 100 + "vw";
+            pixel.style.top = Math.random() * 100 + "vh";
+            pixel.style.animationDuration = (Math.random() * 5 + 5) + "s";
+            document.body.appendChild(pixel);
+        }
+    </script>
+</body>
+</html>
